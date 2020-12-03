@@ -48,6 +48,8 @@ var romina = studenti[0];
 var mariapia = studenti[1];
 var tommaso = studenti[2];
 
-document.getElementById('tabella_due').innerHTML = "<tr><td><strong>Nome</strong></td><td>" + romina.Nome + "</td><td>" + mariapia.Nome + "</td><td>" + tommaso.Nome +  "</td></tr><tr><td><strong>Cognome</strong></td><td>" + romina.Cognome + "</td><td>" + mariapia.Cognome + "</td><td>" + tommaso.Cognome +  "</td></tr>";
+document.getElementById('dati_studenti').innerHTML = "<ul><li>  Nome: " + romina.Nome + "</li> <li> Cognome: " + romina.Cognome + "</li> </ul>" + "<ul><li>  Nome: " + mariapia.Nome + "</li> <li> Cognome: " + mariapia.Cognome + "</li> </ul>" + "<ul><li>  Nome: " + tommaso.Nome + "</li> <li> Cognome: " + tommaso.Cognome + "</li> </ul>"
+
+document.getElementById('tabella_due').innerHTML = "<tr> <td> <strong>Nome</strong> </td> <td>" + romina.Nome + "</td> <td>" + mariapia.Nome + "</td> <td>" + tommaso.Nome +  "</td> </tr> <tr> <td> <strong>Cognome</strong> </td> <td>" + romina.Cognome + "</td> <td>" + mariapia.Cognome + "</td> <td>" + tommaso.Cognome +  "</td> </tr>";
 
 console.log(studenti);
