@@ -7,6 +7,8 @@ Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo ogg
 
 ***********************************/
 
+/* Prima parte */
+
 //Creo l'oggetto in grado di descrivere uno studente
 var tommaso = {
   Nome: 'Tommaso',
@@ -21,3 +23,31 @@ for (var key in tommaso) {
   document.getElementById('dati_studente').innerHTML += "<li>" + key + ": " + tommaso[key] + "</li>";
   document.getElementById('tabella_studenti').innerHTML += "<tr><td><strong>" + key + "</strong></td><td>" + tommaso[key] + "</td></tr>";
 }
+
+/* Seconda parte */
+
+var studenti = [
+  {
+    Nome: 'Romina',
+    Cognome: 'Trazzi',
+    Età: 32
+  },
+  {
+    Nome: 'Mariapia',
+    Cognome: 'Gianguzzi',
+    Età: 30
+  },
+  {
+    Nome: 'Tommaso',
+    Cognome: 'Figlia',
+    Età: 25
+  }
+];
+
+var romina = studenti[0];
+var mariapia = studenti[1];
+var tommaso = studenti[2];
+
+document.getElementById('tabella_due').innerHTML = "<tr><td><strong>Nome</strong></td><td>" + romina.Nome + "</td><td>" + mariapia.Nome + "</td><td>" + tommaso.Nome +  "</td></tr><tr><td><strong>Cognome</strong></td><td>" + romina.Cognome + "</td><td>" + mariapia.Cognome + "</td><td>" + tommaso.Cognome +  "</td></tr>";
+
+console.log(studenti);
