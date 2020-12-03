@@ -19,4 +19,5 @@ var tommaso = {
 for (var key in tommaso) {
   console.log(key, tommaso[key]);
   document.getElementById('dati_studente').innerHTML += "<li>" + key + ": " + tommaso[key] + "</li>";
+  document.getElementById('tabella_studenti').innerHTML += "<tr><td><strong>" + key + "</strong></td><td>" + tommaso[key] + "</td></tr>";
 }
