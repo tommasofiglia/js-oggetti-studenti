@@ -50,11 +50,25 @@ studenti.push(
   {
     nome: prompt("Inserisci il nome di un nuovo studente"),
     cognome: prompt("Inserisci il cognome del nuovo studente"),
-    eta: Number(prompt("Inserisci l'età del nuovo studente"))
+    età: Number(prompt("Inserisci l'età del nuovo studente"))
   }
 )
 
 console.log(studenti);
+
+//Stampa dell'elenco degli studenti in una lista
+
+studenti.forEach((item) => {
+var nomeStudente = item.nome;
+var cognomeStudente = item.cognome;
+var etàStudente = item.età;
+
+var htmlMarkup = `
+  <li> <strong> Nome: </strong> ${nomeStudente}  <br>  <strong> Cognome: </strong> ${cognomeStudente} <br> <strong> Età: </strong> ${etàStudente}</li>
+  `;
+
+  $('#lista_studenti').append(htmlMarkup);
+});
 
 
 
